@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 19,
-  "versionName": "1.0.18",
-  "apkUrl": "https://raw.githubusercontent.com/YvanLouise/YiLin/v1.0.18/releases/com.yilin.app-1.0.18-debug.apk",
-  "sha256": "61017f492ccc354e51b053ed53c91fb61f219aa38a20dbe6f35c9efca91f5bbc",
-  "notes": "新增朗读声音设置：自然、温和、清晰、低沉、明亮和系统默认六套预设；支持试听、列出并固定设备音色，以及兼容开源 Android TTS 引擎。",
-  "publishedAt": "2026-09-07T10:35:37.469Z"
+  "versionCode": 20,
+  "versionName": "1.0.19",
+  "apkUrl": "https://raw.githubusercontent.com/YvanLouise/YiLin/v1.0.19/releases/com.yilin.app-1.0.19-debug.apk",
+  "sha256": "706cad736986fd650b5a035cc6ff8e5a50941b9d67dc08565e3afc2449c21679",
+  "notes": "修复语音预设仍使用同一机械女声的问题：新增真实 Android TTS 引擎列表与切换、系统语音设置、语音数据安装和 RHVoice 安装入口，并在只有一个引擎或音色时明确提示。",
+  "publishedAt": "2026-09-07T13:58:38.648Z"
 }
