@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 18,
-  "versionName": "1.0.17",
-  "apkUrl": "https://raw.githubusercontent.com/YvanLouise/YiLin/v1.0.17/releases/com.yilin.app-1.0.17-debug.apk",
-  "sha256": "6f97eece470da6844d1cd580b6edf6703a6f914252c5137b9577916b36878c90",
-  "notes": "修复手机端检查更新失败；新增 GitHub Raw、GitHub API 与 jsDelivr 三通道回退，并区分未发布、连接超时和清单异常。",
-  "publishedAt": "2026-09-07T10:06:44.248Z"
+  "versionCode": 19,
+  "versionName": "1.0.18",
+  "apkUrl": "https://raw.githubusercontent.com/YvanLouise/YiLin/v1.0.18/releases/com.yilin.app-1.0.18-debug.apk",
+  "sha256": "61017f492ccc354e51b053ed53c91fb61f219aa38a20dbe6f35c9efca91f5bbc",
+  "notes": "新增朗读声音设置：自然、温和、清晰、低沉、明亮和系统默认六套预设；支持试听、列出并固定设备音色，以及兼容开源 Android TTS 引擎。",
+  "publishedAt": "2026-09-07T10:35:37.469Z"
 }
