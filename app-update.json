@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 20,
-  "versionName": "1.0.19",
-  "apkUrl": "https://raw.githubusercontent.com/YvanLouise/YiLin/v1.0.19/releases/com.yilin.app-1.0.19-debug.apk",
-  "sha256": "706cad736986fd650b5a035cc6ff8e5a50941b9d67dc08565e3afc2449c21679",
-  "notes": "修复语音预设仍使用同一机械女声的问题：新增真实 Android TTS 引擎列表与切换、系统语音设置、语音数据安装和 RHVoice 安装入口，并在只有一个引擎或音色时明确提示。",
-  "publishedAt": "2026-09-07T13:58:38.648Z"
+  "versionCode": 21,
+  "versionName": "1.0.20",
+  "apkUrl": "https://raw.githubusercontent.com/YvanLouise/YiLin/v1.0.20/releases/com.yilin.app-1.0.20-debug.apk",
+  "sha256": "459595e6e1bc5dc46005d9859ee3d526497cf9f2bb02457a2fc97af10a4fff36",
+  "notes": "内置 RHVoice 1.18.4 开源 TTS 引擎，离线提取并校验后即可安装；安装完成会自动切换引擎。新增手机版更新下载进度面板，显示实时百分比、已下载与总大小、校验、授权和安装状态。",
+  "publishedAt": "2026-09-07T14:31:48.088Z"
 }
