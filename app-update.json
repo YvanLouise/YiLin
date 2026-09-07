@@ -1,0 +1,9 @@
+{
+  "packageName": "com.yilin.app",
+  "versionCode": 17,
+  "versionName": "1.0.16",
+  "apkUrl": "https://raw.githubusercontent.com/YvanLouise/YiLin/main/releases/com.yilin.app-1.0.16-debug.apk",
+  "sha256": "831abeafff288430b6ddc13cbb82054b3cafff4a669af2ceae538f0709d7e673",
+  "notes": "修复手机端检查更新失败；新增 GitHub API 与 jsDelivr 回退通道，并区分未发布、连接超时和清单异常。",
+  "publishedAt": "2026-09-07T09:55:44.156Z"
+}
