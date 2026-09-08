@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 22,
-  "versionName": "1.0.21",
-  "apkUrl": "https://raw.githubusercontent.com/YvanLouise/YiLin/v1.0.21/releases/com.yilin.app-1.0.21-debug.apk",
-  "sha256": "e04a24764ac7d9799f34e2a5768ac866d4fa37a24319255ec70842c3fcfa3f96",
-  "notes": "重构 AI 导入：长文仅抽取开头、中段和结尾进行 AI 分析，完整正文在本地保真整理，不再要求模型回传全文。AI 超时或响应异常时可使用本地分析继续导入；新增纯文本与 Markdown 格式选择，文件上限提升至 5 MB、正文上限提升至 30 万字符。",
-  "publishedAt": "2026-09-08T07:10:08.032Z"
+  "versionCode": 23,
+  "versionName": "1.0.22",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.22/com.yilin.app-1.0.22-debug.apk",
+  "sha256": "95133e037b8640bc6a00a033b92cdf0aeabf42ec376ce6ad4fb95d4f8b5fd18c",
+  "notes": "功能优化",
+  "publishedAt": "2026-09-08T11:22:40.100Z"
 }
