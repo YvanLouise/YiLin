@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 21,
-  "versionName": "1.0.20",
-  "apkUrl": "https://raw.githubusercontent.com/YvanLouise/YiLin/v1.0.20/releases/com.yilin.app-1.0.20-debug.apk",
-  "sha256": "459595e6e1bc5dc46005d9859ee3d526497cf9f2bb02457a2fc97af10a4fff36",
-  "notes": "内置 RHVoice 1.18.4 开源 TTS 引擎，离线提取并校验后即可安装；安装完成会自动切换引擎。新增手机版更新下载进度面板，显示实时百分比、已下载与总大小、校验、授权和安装状态。",
-  "publishedAt": "2026-09-07T14:31:48.088Z"
+  "versionCode": 22,
+  "versionName": "1.0.21",
+  "apkUrl": "https://raw.githubusercontent.com/YvanLouise/YiLin/v1.0.21/releases/com.yilin.app-1.0.21-debug.apk",
+  "sha256": "e04a24764ac7d9799f34e2a5768ac866d4fa37a24319255ec70842c3fcfa3f96",
+  "notes": "重构 AI 导入：长文仅抽取开头、中段和结尾进行 AI 分析，完整正文在本地保真整理，不再要求模型回传全文。AI 超时或响应异常时可使用本地分析继续导入；新增纯文本与 Markdown 格式选择，文件上限提升至 5 MB、正文上限提升至 30 万字符。",
+  "publishedAt": "2026-09-08T07:10:08.032Z"
 }
