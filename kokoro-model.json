@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "kokoro-82m-int8-multilingual",
+  "name": "Kokoro-82M int8 多语言模型",
+  "version": "1.1",
+  "runtime": "sherpa-onnx",
+  "runtimeVersion": "1.13.4",
+  "archiveUrl": "https://github.com/YvanLouise/YiLin/releases/download/kokoro-models-v1/kokoro-82m-int8-v1.1.zip",
+  "sha256": "10f9bc44132065ae9ee3bbbd8836c13b3e164bcf95001fa6c68204947f947f86",
+  "compressedBytes": 146842946,
+  "installedBytes": 215321602,
+  "rootDirectory": "kokoro-int8-multi-lang-v1_1",
+  "license": "Apache-2.0",
+  "sourceUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/tts-models",
+  "modelUrl": "https://huggingface.co/hexgrad/Kokoro-82M",
+  "publishedAt": "2026-09-08T13:15:00.000Z"
+}
