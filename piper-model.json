@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "vits-piper-en_US-lessac-medium-int8",
+  "name": "Piper Lessac Medium INT8",
+  "version": "1.0.0",
+  "runtime": "sherpa-onnx",
+  "minimumRuntime": "1.13.7",
+  "archiveUrl": "https://github.com/YvanLouise/YiLin/releases/download/mobile-tts-models-v1/vits-piper-en_US-lessac-medium-int8.zip",
+  "compressedBytes": 22335846,
+  "installedBytes": 36577521,
+  "sha256": "91c2fc8b4eca8d17f55a67bc8c0aa700625d250d2a9fe9207c497c55e406bc8e",
+  "rootDirectory": "vits-piper-en_US-lessac-medium-int8",
+  "license": "See bundled MODEL_CARD and dataset terms",
+  "sourceUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/tts-models",
+  "modelUrl": "https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_US/lessac/medium"
+}
