@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 32,
-  "versionName": "1.0.31",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.31/com.yilin.app-1.0.31-debug.apk",
-  "sha256": "c8a051f0042c74aa47a14f5f423c3610e9897068afeb1953399ce8d3edf857b7",
-  "notes": "修复手机端神经语音导致应用崩溃的问题：移除译林主进程中的 sherpa-onnx JNI 与内嵌模型推理，改用官方独立 Android TTS 服务。设置中可下载并安装 KittenTTS Nano 或 Piper Lessac，提供下载进度、SHA-256 校验、安装后自动选择和旧模型清理；引擎异常不再直接导致译林进程崩溃。主 APK 体积同时由约 130 MB 降至约 19 MB。",
-  "publishedAt": "2026-09-09T15:48:44.360Z"
+  "versionCode": 33,
+  "versionName": "1.0.32",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.32/com.yilin.app-1.0.32-debug.apk",
+  "sha256": "f2c7e0a71274193452f036fc8edfec9b90105521adfc34810f6c9264e63829ae",
+  "notes": "彻底修复手机端神经语音导致应用崩溃的问题：移除译林主进程中的 sherpa-onnx JNI 与内嵌模型推理，改用官方独立 Android TTS 服务。设置中可下载并安装 KittenTTS Nano 或 Piper Lessac，提供下载进度、SHA-256 校验、安装后自动选择、取消安装后的可重试恢复和旧模型清理；引擎异常不再直接导致译林进程崩溃。主 APK 体积由约 130 MB 降至约 19 MB。",
+  "publishedAt": "2026-09-09T15:58:44.645Z"
 }
