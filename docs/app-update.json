@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 27,
-  "versionName": "1.0.26",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.26/com.yilin.app-1.0.26-debug.apk",
-  "sha256": "828f1c3dd2c546084afecb5fbde7af3c34fdcfe0c1b8cba858a240e563c8c441",
-  "notes": "修复 Kokoro-82M 首次下载时错误提示存储空间不足的问题。",
-  "publishedAt": "2026-09-09T09:34:36.032Z"
+  "versionCode": 28,
+  "versionName": "1.0.27",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.27/com.yilin.app-1.0.27-debug.apk",
+  "sha256": "6498ec7b86b749c4be03a196bcfee9e748ef3e5d0bc86276ca5757fecb87eb7d",
+  "notes": "修复 Kokoro-82M 启用后首次朗读崩溃；使用正确的文件系统模型加载方式；完善模型文件校验、内存保护与错误提示。",
+  "publishedAt": "2026-09-09T10:04:32.418Z"
 }
