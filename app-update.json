@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 26,
-  "versionName": "1.0.25",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.25/com.yilin.app-1.0.25-debug.apk",
-  "sha256": "0c821d6687431b2510580e7771fff0dea0dc82942c73276287fade7f7e84ba5e",
-  "notes": "修复 Kokoro-82M 模型下载按钮不可用；内置 sherpa-onnx Android 运行库；修复并兼容旧版更新通道。",
-  "publishedAt": "2026-09-09T09:17:50.972Z"
+  "versionCode": 27,
+  "versionName": "1.0.26",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.26/com.yilin.app-1.0.26-debug.apk",
+  "sha256": "828f1c3dd2c546084afecb5fbde7af3c34fdcfe0c1b8cba858a240e563c8c441",
+  "notes": "修复 Kokoro-82M 首次下载时错误提示存储空间不足的问题。",
+  "publishedAt": "2026-09-09T09:34:36.032Z"
 }
