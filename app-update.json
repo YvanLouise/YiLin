@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 31,
-  "versionName": "1.0.30",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.30/com.yilin.app-1.0.30-debug.apk",
-  "sha256": "f79adbbcba878dbc60459afccf846e46d0bf2ef2f090111d6b632f2a02394604",
-  "notes": "新增手机端离线语音：KittenTTS Nano INT8 提供 8 个自然男女音色，Piper Lessac INT8 提供低延迟英语女声。支持独立下载进度、SHA-256 校验、音色切换、模型删除和系统语音回退；升级 sherpa-onnx 至 1.13.7，并限制单线程和单模型驻留以降低崩溃风险。",
-  "publishedAt": "2026-09-09T11:41:33.186Z"
+  "versionCode": 32,
+  "versionName": "1.0.31",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.31/com.yilin.app-1.0.31-debug.apk",
+  "sha256": "c8a051f0042c74aa47a14f5f423c3610e9897068afeb1953399ce8d3edf857b7",
+  "notes": "修复手机端神经语音导致应用崩溃的问题：移除译林主进程中的 sherpa-onnx JNI 与内嵌模型推理，改用官方独立 Android TTS 服务。设置中可下载并安装 KittenTTS Nano 或 Piper Lessac，提供下载进度、SHA-256 校验、安装后自动选择和旧模型清理；引擎异常不再直接导致译林进程崩溃。主 APK 体积同时由约 130 MB 降至约 19 MB。",
+  "publishedAt": "2026-09-09T15:48:44.360Z"
 }
