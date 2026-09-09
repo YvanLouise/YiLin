@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 29,
-  "versionName": "1.0.28",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.28/com.yilin.app-1.0.28-debug.apk",
-  "sha256": "7d3d77b793b361a2c3af96fe38efbc77d9be30f48cfde90bd7a12960e949c2de",
-  "notes": "降低 Kokoro-82M 朗读启动延迟：启用与启动时后台预热模型，使用流式 AudioTrack 边生成边播放，取消完整 WAV 生成等待。",
-  "publishedAt": "2026-09-09T10:22:32.383Z"
+  "versionCode": 30,
+  "versionName": "1.0.29",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.29/com.yilin.app-1.0.29-debug.apk",
+  "sha256": "ba2cc72895060c10770eb96eb7d96f4c8afafa661cd81e60b234ba771f695095",
+  "notes": "修复部分手机使用 Kokoro-82M 时在原生推理阶段崩溃的问题：取消启动预热，自动回退到稳定的系统语音，并暂停不兼容模型的启用与下载入口。",
+  "publishedAt": "2026-09-09T10:39:45.047Z"
 }
