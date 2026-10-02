@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 39,
-  "versionName": "1.0.38",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.38/com.yilin.app-1.0.38-debug.apk",
-  "sha256": "b29e49e18f66ed93de1080b64b201d9da849c543d14d391dfbe50460911cdbae",
+  "versionCode": 40,
+  "versionName": "1.0.39",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.39/com.yilin.app-1.0.39-debug.apk",
+  "sha256": "916689143c4a456ce1d2401f310c1ed553bfe6d253deca9b449b5ec663a5ff27",
   "notes": "功能优化",
-  "publishedAt": "2026-09-24T12:35:43.945Z"
+  "publishedAt": "2026-10-02T11:43:07.249Z"
 }
