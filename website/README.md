@@ -2,6 +2,14 @@
 
 独立的中文产品介绍网站，沿用译林的 YL 标识，以阅读、查词、记忆和表达组织内容。页面使用原生 HTML、CSS 和 JavaScript，不依赖应用本体或在线 AI 服务。
 
+公开网站：[https://yvanlouise.github.io/YiLin/](https://yvanlouise.github.io/YiLin/)。
+
+## GitHub Pages 部署
+
+仓库使用 `.github/workflows/website-pages.yml` 从 `main` 分支自动构建和部署，产物只包含静态网站以及原 `docs/` 的公开资源。软件已有的 `/YiLin/app-update.json` 地址继续可用。也可在 GitHub Actions 中手动运行 `Deploy YiLin website`。
+
+本地运行 `npm.cmd run build:pages` 可生成同样的产物，输出为 `.local/pages/`。GitHub Pages 只托管这些静态文件；文案管理服务仍在本机运行。
+
 ## 运行
 
 需要 Node.js 24，无需安装依赖。在本目录执行：
@@ -22,11 +30,11 @@ npm.cmd run dev
 - README 文档：分别编辑软件根目录与网站目录的 README，右侧预览 Markdown；不执行文档中的 HTML。
 - 版本与链接：集中维护 Android 版本、安装包地址与项目链接。
 - 保存修改：写入本地源文件并重新构建网站，保存前在 `.local/backups/` 保留旧文件。检测到外部修改时拒绝覆盖。
-- 一键更新仓库：保存、构建，在 `.local/publish/` 新建独立发布目录，仅提交 `website/` 和可选的软件 `README.md`，推送到 `YvanLouise/YiLin` 的 `main` 分支。主项目现有索引与其他未提交文件不参与提交。
+- 一键更新仓库：保存、构建，在 `.local/publish/` 新建独立发布目录，提交 `website/`、指定的 Pages 部署流程和可选的软件 `README.md`，推送到 `YvanLouise/YiLin` 的 `main` 分支。随后 GitHub Actions 自动部署公开站。主项目现有索引与其他未提交文件不参与提交。
 
 推送复用本机 Git 凭据。如果未登录，可执行 `gh auth login --hostname github.com --git-protocol https` 与 `gh auth setup-git`。管理页不接收或保存访问令牌。连接或认证失败时保留修改与本地提交，可在页面重试；远端有新提交时需先刷新仓库状态并核对。
 
-`.local/` 中的备份、发布目录和最近 30 次结果不会上传。GitHub 更新不会自动重新部署原有 Sites 私有网站。管理员服务与 README 文件也不会被打进公开网站的 `dist/`。
+`.local/` 中的备份、发布目录和最近 30 次结果不会上传。管理员服务与 README 文件也不会被打进公开网站的 `dist/`。公开站的更新结果可在管理页“查看网站部署”进入 GitHub Actions 确认。
 
 验证管理页与发布隔离逻辑：`npm.cmd test`。测试使用独立临时文件和本地裸 Git 仓库，不访问真实 GitHub 仓库。
 

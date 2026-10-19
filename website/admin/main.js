@@ -24,6 +24,7 @@ async function request(url, input) {
 }
 function setState(value) {
   state = value; saved = { values: { ...value.values }, release: { ...value.release }, readmes: { ...value.readmes } };
+  $('#public-site-link').href = value.release.siteUrl;
   draft = structuredClone(saved); renderContent(); renderReadme(); renderRelease(); updateStateLabel();
 }
 
@@ -149,6 +150,10 @@ function renderJob(job) {
   else if (job.status === 'succeeded') {
     $('#job-result').append(document.createTextNode(job.noChanges ? '仓库内容已是最新。 ' : '已提交并推送，远端提交已确认。 '));
     const link = element('a', '', `查看提交 ${job.commit.slice(0, 10)}`); link.href = `https://github.com/YvanLouise/YiLin/commit/${job.commit}`; link.target = '_blank'; link.rel = 'noopener'; $('#job-result').append(link);
+    if (job.deploymentUrl) {
+      $('#job-result').append(document.createTextNode(' · '));
+      const deployment = element('a', '', '查看网站部署'); deployment.href = job.deploymentUrl; deployment.target = '_blank'; deployment.rel = 'noopener'; $('#job-result').append(deployment);
+    }
   }
   $('#job-files-container').hidden = !job.files?.length; $('#job-files').textContent = job.files?.join('\n') || '';
 }

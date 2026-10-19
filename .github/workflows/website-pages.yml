@@ -1,0 +1,64 @@
+name: Deploy YiLin website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'website/**'
+      - 'docs/**'
+      - '.github/workflows/website-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: website-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
+    steps:
+      - name: Check out website and existing public assets
+        uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            website
+            docs
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - name: Check scripts
+        run: npm run check
+      - name: Test content editing and publishing
+        run: npm test
+      - name: Build GitHub Pages artifact
+        run: npm run build:pages
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: website/.local/pages
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy public website
+        id: deployment
+        uses: actions/deploy-pages@v4

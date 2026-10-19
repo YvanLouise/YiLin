@@ -92,6 +92,10 @@ test('local API rejects cross-site writes, bad hosts and private file paths', as
 
 test('publish pushes only managed website and README, preserving the application index', async t => {
   const f=await fixture(t); const r=await remoteFixture(f);
+  await mkdir(path.join(f.project,'.github/workflows'),{recursive:true});
+  const workflow='name: Deploy YiLin website\non: workflow_dispatch\n';
+  await writeFile(path.join(f.project,'.github/workflows/website-pages.yml'),workflow);
+  await writeFile(path.join(f.project,'.github/workflows/unrelated.yml'),'private unrelated workflow');
   await git(['init','--initial-branch=main','.'],f.project); await writeFile(path.join(f.project,'unrelated.txt'),'private local edit'); await git(['add','unrelated.txt'],f.project);
   const indexBefore=await git(['write-tree'],f.project);
   await mkdir(path.join(f.site,'.local'),{recursive:true}); await writeFile(path.join(f.site,'.local/private.txt'),'must never publish');
@@ -101,6 +105,8 @@ test('publish pushes only managed website and README, preserving the application
   assert.equal(await git(['show','main:README.md'],r.remote),'# Local app');
   assert.equal(await git(['show','main:unrelated.txt'],r.remote),'remote original');
   assert.equal((await runGit(['show','main:website/.local/private.txt'],r.remote)).code,128);
+  assert.equal(await git(['show','main:.github/workflows/website-pages.yml'],r.remote),workflow.trim());
+  assert.equal((await runGit(['show','main:.github/workflows/unrelated.yml'],r.remote)).code,128);
   assert.equal(await git(['write-tree'],f.project),indexBefore);
   assert.equal((await publisher.repository()).head,job.commit);
   const next=await finish(await publisher.start({revision:(await f.store.state()).revision,expectedHead:job.commit}));

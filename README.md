@@ -19,14 +19,18 @@ npm.cmd run dev:online
 
 ## 介绍网站与本地文案管理
 
-介绍网站源码位于 `website/`，使用独立的静态构建。双击 `website/start-admin.cmd`，或运行：
+介绍网站源码位于 `website/`，使用独立的静态构建。
+
+公开网站：[https://yvanlouise.github.io/YiLin/](https://yvanlouise.github.io/YiLin/)。推送网站更新到 `main` 后，GitHub Actions 自动部署 GitHub Pages，并保留原有软件更新清单地址。
+
+双击 `website/start-admin.cmd`，或运行：
 
 ```powershell
 cd website
 npm.cmd run admin
 ```
 
-访问 `http://127.0.0.1:5194`，可分区编辑网站文案、版本和下载链接，修改软件及网站 README，并预览保存后的网页。点击“一键更新仓库”会在独立发布目录中提交网站和选中的 README，推送到 `YvanLouise/YiLin` 的 `main` 分支。主项目其他未提交改动不参与提交。
+访问 `http://127.0.0.1:5194`，可分区编辑网站文案、版本和下载链接，修改软件及网站 README，并预览保存后的网页。点击“一键更新仓库”会在独立发布目录中提交网站、Pages 部署流程和选中的 README，推送到 `YvanLouise/YiLin` 的 `main` 分支，随后自动部署公开站。主项目其他未提交改动不参与提交。
 
 详细运行、登录与备份说明见 [网站管理说明](website/README.md)。
 

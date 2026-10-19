@@ -63,13 +63,14 @@
     </section>
     <section id="release-view" class="release-view" aria-labelledby="release-title" hidden><h2 id="release-title">版本与链接</h2><p class="section-note">版本号、安装包和项目链接会同时用于网页按钮与页面信息。</p><div class="release-fields" id="release-fields"></div></section>
     <section id="repository-view" class="repository-view" aria-labelledby="repository-title" hidden>
-      <div class="section-title-row"><div><h2 id="repository-title">仓库更新</h2><p class="section-note">网站目录与 README 会在独立目录中提交。</p></div><button class="button" type="button" id="check-repository"><svg class="icon"><use href="#refresh"/></svg>刷新仓库状态</button></div>
+      <div class="section-title-row"><div><h2 id="repository-title">仓库更新</h2><p class="section-note">网站、Pages 部署流程与 README 会在独立目录中提交。</p></div><button class="button" type="button" id="check-repository"><svg class="icon"><use href="#refresh"/></svg>刷新仓库状态</button></div>
       <dl class="repository-details"><div><dt>目标仓库</dt><dd><a href="https://github.com/YvanLouise/YiLin" target="_blank" rel="noopener">YvanLouise / YiLin</a></dd></div><div><dt>目标分支</dt><dd>main</dd></div><div><dt>仓库连接</dt><dd id="connection-state">正在连接…</dd></div><div><dt>远端提交</dt><dd id="remote-head">—</dd></div><div><dt>README 原文</dt><dd><a href="https://raw.githubusercontent.com/YvanLouise/YiLin/main/README.md" target="_blank" rel="noopener">main/README.md<svg class="icon"><use href="#external"/></svg></a></dd></div></dl>
       <label class="commit-message">提交说明<input id="commit-message" type="text" maxlength="180" value="docs: update YiLin website and README"></label>
+      <p class="section-note">公开网站：<a id="public-site-link" href="https://yvanlouise.github.io/YiLin/" target="_blank" rel="noopener">打开 GitHub Pages 网站</a> · <a href="https://github.com/YvanLouise/YiLin/actions/workflows/website-pages.yml" target="_blank" rel="noopener">查看自动部署</a></p>
       <label class="checkbox-label"><input id="include-app-readme" type="checkbox" checked>同时更新软件根目录的 README.md</label>
-      <p class="section-note">会更新 website/ 中的网站源码、静态构建和管理页。主项目中其他未提交内容不会一起上传。</p>
+      <p class="section-note">会更新 website/、网站的 Pages 部署流程和选中的 README。推送后自动部署公开站，主项目其他未提交内容不会一起上传。</p>
       <div class="authentication-help"><h3>GitHub 登录</h3><p>推送使用本机 Git 的登录信息。首次使用或提示认证失败时，在终端执行：</p><pre><code>gh auth login --hostname github.com --git-protocol https
-gh auth setup-git</code></pre><p>登录完成后，回到这里点击“刷新仓库状态”并重试。仓库更新完成后，Sites 托管的网站需另行部署。</p></div>
+gh auth setup-git</code></pre><p>登录完成后，回到这里点击“刷新仓库状态”并重试。GitHub Pages 自动构建完成后，公开网站会更新。</p></div>
       <div class="job-panel" id="job-panel" aria-live="polite" hidden><h3 id="job-title">更新进度</h3><ol id="job-steps"></ol><p id="job-result"></p><details id="job-files-container" hidden><summary>查看本次文件</summary><pre id="job-files"></pre></details></div>
       <div class="history-section"><h3>最近更新</h3><div id="publish-history"><p class="empty-state">尚未更新仓库。</p></div></div>
     </section>
