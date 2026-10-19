@@ -1,0 +1,1758 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "id": "hero",
+      "label": "首屏介绍"
+    },
+    {
+      "id": "reading",
+      "label": "阅读体验"
+    },
+    {
+      "id": "practice",
+      "label": "记忆与表达"
+    },
+    {
+      "id": "faq",
+      "label": "常见问题"
+    },
+    {
+      "id": "download",
+      "label": "下载与页脚"
+    },
+    {
+      "id": "navigation",
+      "label": "品牌与导航"
+    },
+    {
+      "id": "interaction",
+      "label": "交互提示"
+    },
+    {
+      "id": "metadata",
+      "label": "页面信息"
+    }
+  ],
+  "fields": [
+    {
+      "key": "word.patience.term",
+      "group": "reading",
+      "label": "patience · 单词",
+      "value": "patience",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.patience.phonetic",
+      "group": "reading",
+      "label": "patience · 音标",
+      "value": "/ˈpeɪʃəns/",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.patience.pos",
+      "group": "reading",
+      "label": "patience · 词性缩写",
+      "value": "n.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.patience.meaning",
+      "group": "reading",
+      "label": "patience · 释义",
+      "value": "耐心；耐性",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.patience.kind",
+      "group": "reading",
+      "label": "patience · 词性",
+      "value": "名词",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.patience.example",
+      "group": "reading",
+      "label": "patience · 词卡例句",
+      "value": "Growth takes patience.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.patience.translation",
+      "group": "reading",
+      "label": "patience · 例句翻译",
+      "value": "成长需要耐心。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.patience.context",
+      "group": "reading",
+      "label": "patience · 语境句子",
+      "value": "Its quiet patience reminds us that growth is often invisible from one day to the next.",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.patience.contextTranslation",
+      "group": "reading",
+      "label": "patience · 语境翻译",
+      "value": "它那种安静的耐心提醒我们，成长往往不会在一朝一夕间显现。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.growth.term",
+      "group": "reading",
+      "label": "growth · 单词",
+      "value": "growth",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.growth.phonetic",
+      "group": "reading",
+      "label": "growth · 音标",
+      "value": "/ɡrəʊθ/",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.growth.pos",
+      "group": "reading",
+      "label": "growth · 词性缩写",
+      "value": "n.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.growth.meaning",
+      "group": "reading",
+      "label": "growth · 释义",
+      "value": "成长；增长",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.growth.kind",
+      "group": "reading",
+      "label": "growth · 词性",
+      "value": "名词",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.growth.example",
+      "group": "reading",
+      "label": "growth · 词卡例句",
+      "value": "Growth takes time.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.growth.translation",
+      "group": "reading",
+      "label": "growth · 例句翻译",
+      "value": "成长需要时间。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.growth.context",
+      "group": "reading",
+      "label": "growth · 语境句子",
+      "value": "Growth is often invisible from one day to the next.",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.growth.contextTranslation",
+      "group": "reading",
+      "label": "growth · 语境翻译",
+      "value": "成长往往不会在一朝一夕间显现。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.quiet.term",
+      "group": "reading",
+      "label": "quiet · 单词",
+      "value": "quiet",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.quiet.phonetic",
+      "group": "reading",
+      "label": "quiet · 音标",
+      "value": "/ˈkwaɪət/",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.quiet.pos",
+      "group": "reading",
+      "label": "quiet · 词性缩写",
+      "value": "adj.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.quiet.meaning",
+      "group": "reading",
+      "label": "quiet · 释义",
+      "value": "安静的；平静的",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.quiet.kind",
+      "group": "reading",
+      "label": "quiet · 词性",
+      "value": "形容词",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.quiet.example",
+      "group": "reading",
+      "label": "quiet · 词卡例句",
+      "value": "Enjoy a quiet moment.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.quiet.translation",
+      "group": "reading",
+      "label": "quiet · 例句翻译",
+      "value": "享受片刻的宁静。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.quiet.context",
+      "group": "reading",
+      "label": "quiet · 语境句子",
+      "value": "Its quiet patience reminds us that growth is often invisible from one day to the next.",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "word.quiet.contextTranslation",
+      "group": "reading",
+      "label": "quiet · 语境翻译",
+      "value": "这里的 quiet 描述一种安静、平和的耐心。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.menuOpen",
+      "group": "interaction",
+      "label": "展开手机导航",
+      "value": "打开导航菜单",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.menuClose",
+      "group": "interaction",
+      "label": "收起手机导航",
+      "value": "关闭导航菜单",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.savedWord",
+      "group": "interaction",
+      "label": "已收藏按钮",
+      "value": "已加入生词本",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.savedNote",
+      "group": "interaction",
+      "label": "收藏完成说明",
+      "value": "已加入演示生词本，可前往词卡复习。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.alreadySaved",
+      "group": "interaction",
+      "label": "重复收藏提示（{word} 为单词）",
+      "value": "{word} 已在演示生词本中，可切换到词卡复习。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.savedToast",
+      "group": "interaction",
+      "label": "收藏成功提示（{word} 为单词）",
+      "value": "已记下 {word}。去词卡复习里翻一翻吧。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.flipBack",
+      "group": "interaction",
+      "label": "词卡返回按钮",
+      "value": "再看正面",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.savedCaption",
+      "group": "interaction",
+      "label": "已收藏词卡说明",
+      "value": "已加入演示生词本 · {word}",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.writingEmpty",
+      "group": "interaction",
+      "label": "写作内容为空时的提示",
+      "value": "先写一句英文，再看看示例反馈。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.writingGood",
+      "group": "interaction",
+      "label": "写作匹配示例后的反馈",
+      "value": "你已经抓住了关键表达，留意主谓一致和句末标点。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.writingHint",
+      "group": "interaction",
+      "label": "写作参考提示",
+      "value": "试着关注“小小的行动”和“带来改变”这两个意思，再对照示例表达。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.writingReference",
+      "group": "interaction",
+      "label": "写作参考英文",
+      "value": "Small steps make a difference.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.userName",
+      "group": "interaction",
+      "label": "对话中的用户名称",
+      "value": "You",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.chatMenu",
+      "group": "interaction",
+      "label": "菜单介绍回复",
+      "value": "Of course. We have coffee, tea, and fresh pastries. What would you like?",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.replyTea",
+      "group": "interaction",
+      "label": "回复选项：茶",
+      "value": "A cup of tea, please.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.chatTemperature",
+      "group": "interaction",
+      "label": "温度询问回复",
+      "value": "Of course! Would you like it hot or iced?",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.replyHot",
+      "group": "interaction",
+      "label": "回复选项：热饮",
+      "value": "Hot, please.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.replyIced",
+      "group": "interaction",
+      "label": "回复选项：冰饮",
+      "value": "I'd like it iced, please.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.chatFinished",
+      "group": "interaction",
+      "label": "点单完成回复",
+      "value": "You're all set. Enjoy your drink!",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.chatComplete",
+      "group": "interaction",
+      "label": "对话结束说明",
+      "value": "你完成了一次点单体验。下载译林，练习更多生活场景。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.speechUnsupported",
+      "group": "interaction",
+      "label": "浏览器不支持朗读提示",
+      "value": "当前浏览器不支持朗读，可在译林中配置声音。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.speechError",
+      "group": "interaction",
+      "label": "朗读失败提示",
+      "value": "暂时无法朗读，可在译林中选择语音服务。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "metadata.attribute1",
+      "group": "metadata",
+      "label": "分享与搜索 · description",
+      "value": "译林 YiLin，把沉浸阅读、语境查词、词卡复习、逐句写作与场景对话串成自然的语言学习路径。从读懂一篇文章，到长出自己的表达。",
+      "format": "attribute",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "metadata.attribute2",
+      "group": "metadata",
+      "label": "分享与搜索 · og:title",
+      "value": "译林 YiLin · 从阅读到表达",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "metadata.attribute3",
+      "group": "metadata",
+      "label": "分享与搜索 · og:description",
+      "value": "读进一片森林，长出自己的语言。把查词、记忆与表达，融入每一次阅读。",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "metadata.text1",
+      "group": "metadata",
+      "label": "标题 · 译林 YiLin · 从阅读到表达",
+      "value": "译林 YiLin · 从阅读到表达",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "metadata.text2",
+      "group": "metadata",
+      "label": "按钮 / 链接 · 跳到主要内容",
+      "value": "跳到主要内容",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.attribute1",
+      "group": "navigation",
+      "label": "无障碍说明 · 译林 YiLin 首页",
+      "value": "译林 YiLin 首页",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.brand",
+      "group": "navigation",
+      "label": "品牌名称",
+      "value": "译林",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.attribute2",
+      "group": "navigation",
+      "label": "无障碍说明 · 主要导航",
+      "value": "主要导航",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.features",
+      "group": "navigation",
+      "label": "软件特色导航",
+      "value": "软件特色",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.experience",
+      "group": "navigation",
+      "label": "学习体验导航",
+      "value": "学习体验",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.faq",
+      "group": "navigation",
+      "label": "常见问题导航",
+      "value": "常见问题",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.text1",
+      "group": "navigation",
+      "label": "按钮 / 链接 · 下载译林",
+      "value": "下载译林",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.attribute3",
+      "group": "navigation",
+      "label": "无障碍说明 · 打开导航菜单",
+      "value": "打开导航菜单",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.title1",
+      "group": "hero",
+      "label": "标题第一行",
+      "value": "读进一片森林，",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.title2",
+      "group": "hero",
+      "label": "标题第二行",
+      "value": "长出自己的",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.title3",
+      "group": "hero",
+      "label": "标题强调",
+      "value": "语言。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.description1",
+      "group": "hero",
+      "label": "介绍文案第一行",
+      "value": "让阅读不止于看懂。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.description2",
+      "group": "hero",
+      "label": "介绍文案第二行",
+      "value": "把查词、记忆与表达，融入每一次阅读。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.download",
+      "group": "interaction",
+      "label": "Android 下载按钮",
+      "value": "下载 Android 版",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text1",
+      "group": "hero",
+      "label": "按钮 / 链接 · 看看如何学习",
+      "value": "看看如何学习",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text2",
+      "group": "hero",
+      "label": "文案 · Android · v__APP_VERSION__",
+      "value": "Android · v__APP_VERSION__",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.attribute1",
+      "group": "hero",
+      "label": "无障碍说明 · 译林沉浸阅读功能演示",
+      "value": "译林沉浸阅读功能演示",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text3",
+      "group": "hero",
+      "label": "文案 · 译林 · 沉浸阅读",
+      "value": "译林 · 沉浸阅读",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text4",
+      "group": "hero",
+      "label": "文案 · 阅读",
+      "value": "阅读",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text5",
+      "group": "hero",
+      "label": "文案 · 学习",
+      "value": "学习",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text6",
+      "group": "hero",
+      "label": "文案 · 我的",
+      "value": "我的",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text7",
+      "group": "hero",
+      "label": "标题 · A Walk in the Forest",
+      "value": "A Walk in the Forest",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text8",
+      "group": "hero",
+      "label": "文案 · Yilin Reading",
+      "value": "Yilin Reading",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text9",
+      "group": "hero",
+      "label": "文案 · The path disappeared beneat",
+      "value": "The path disappeared beneath a carpet of fallen leaves. Each step made a soft sound, and the cool air carried the scent of pine and wet earth.",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 4000
+    },
+    {
+      "key": "hero.text10",
+      "group": "hero",
+      "label": "文案 · The forest does not ask us ",
+      "value": "The forest does not ask us to hurry. Its oldest trees have watched hundreds of seasons arrive and leave. Their quiet",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.attribute2",
+      "group": "hero",
+      "label": "无障碍说明 · 查看 patience 的释义",
+      "value": "查看 patience 的释义",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text11",
+      "group": "hero",
+      "label": "文案 · reminds us that growth is o",
+      "value": "reminds us that growth is often invisible from one day to the next.",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text12",
+      "group": "hero",
+      "label": "文案 · When I returned home, nothi",
+      "value": "When I returned home, nothing outside me had changed. Yet the noise in my mind had become quieter, and ordinary things seemed clear again.",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 4000
+    },
+    {
+      "key": "hero.attribute3",
+      "group": "hero",
+      "label": "无障碍说明 · 关闭单词释义",
+      "value": "关闭单词释义",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text13",
+      "group": "hero",
+      "label": "文案 · /ˈpeɪʃəns/ · n.",
+      "value": "/ˈpeɪʃəns/ · n.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.saveWord",
+      "group": "interaction",
+      "label": "加入生词本按钮",
+      "value": "加入生词本",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "hero.text14",
+      "group": "hero",
+      "label": "文案 · 耐心 · 名词",
+      "value": "耐心 · 名词",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.cards",
+      "group": "interaction",
+      "label": "词卡复习标签",
+      "value": "词卡复习",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.attribute4",
+      "group": "navigation",
+      "label": "无障碍说明 · 从阅读到表达的学习路径",
+      "value": "从阅读到表达的学习路径",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.text2",
+      "group": "navigation",
+      "label": "文案 · 阅读",
+      "value": "阅读",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.text3",
+      "group": "navigation",
+      "label": "文案 · 导入你喜欢的英文内容",
+      "value": "导入你喜欢的英文内容",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.text4",
+      "group": "navigation",
+      "label": "文案 · 查词",
+      "value": "查词",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.text5",
+      "group": "navigation",
+      "label": "文案 · 在上下文中理解词义",
+      "value": "在上下文中理解词义",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.text6",
+      "group": "navigation",
+      "label": "文案 · 复习",
+      "value": "复习",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.text7",
+      "group": "navigation",
+      "label": "文案 · 通过词卡与拼写加深记忆",
+      "value": "通过词卡与拼写加深记忆",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.text8",
+      "group": "navigation",
+      "label": "文案 · 表达",
+      "value": "表达",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "navigation.text9",
+      "group": "navigation",
+      "label": "文案 · 在写作与对话中真正使用",
+      "value": "在写作与对话中真正使用",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text1",
+      "group": "reading",
+      "label": "文案 · / 阅读与理解",
+      "value": "/ 阅读与理解",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text2",
+      "group": "reading",
+      "label": "标题 · 一个新词，",
+      "value": "一个新词，",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text3",
+      "group": "reading",
+      "label": "标题 · 也是一次新的理解。",
+      "value": "也是一次新的理解。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text4",
+      "group": "reading",
+      "label": "标题 · 留在文章里，读懂它的意思。",
+      "value": "留在文章里，读懂它的意思。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text5",
+      "group": "reading",
+      "label": "文案 · 点词看语境释义，把值得记住的表达留下来。",
+      "value": "点词看语境释义，把值得记住的表达留下来。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text6",
+      "group": "reading",
+      "label": "文案 · 阅读原文",
+      "value": "阅读原文",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text7",
+      "group": "reading",
+      "label": "按钮 / 链接 · 语境查词",
+      "value": "语境查词",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text8",
+      "group": "reading",
+      "label": "文案 · 交互演示",
+      "value": "交互演示",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text9",
+      "group": "reading",
+      "label": "标题 · The art of slowing down",
+      "value": "The art of slowing down",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text10",
+      "group": "reading",
+      "label": "文案 · The forest does not ask us ",
+      "value": "The forest does not ask us to hurry. Its",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text11",
+      "group": "reading",
+      "label": "文案 · reminds us that",
+      "value": "reminds us that",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text12",
+      "group": "reading",
+      "label": "文案 · is often invisible from one",
+      "value": "is often invisible from one day to the next.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text13",
+      "group": "reading",
+      "label": "文案 · In a world that celebrates ",
+      "value": "In a world that celebrates speed, the forest offers a different kind of wisdom. Trees do not rush, yet they reach extraordinary heights. Seasons change in their own time, and life unfolds at a rhythm beyond our control. To spend time in nature is to be reminded that waiting can also be a form of progress.",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 4000
+    },
+    {
+      "key": "reading.text14",
+      "group": "reading",
+      "label": "文案 · 试着点击文中的蓝色单词",
+      "value": "试着点击文中的蓝色单词",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.attribute1",
+      "group": "reading",
+      "label": "无障碍说明 · 所选单词的语境释义",
+      "value": "所选单词的语境释义",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.attribute2",
+      "group": "reading",
+      "label": "无障碍说明 · 朗读所选单词",
+      "value": "朗读所选单词",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.attribute3",
+      "group": "reading",
+      "label": "无障碍说明 · 四步学习过程",
+      "value": "四步学习过程",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text15",
+      "group": "reading",
+      "label": "功能说明 · 阅读文章",
+      "value": "阅读文章",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text16",
+      "group": "reading",
+      "label": "功能说明 · 语境查词",
+      "value": "语境查词",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "reading.text17",
+      "group": "reading",
+      "label": "功能说明 · 主动表达",
+      "value": "主动表达",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text1",
+      "group": "practice",
+      "label": "文案 · / 记忆与表达",
+      "value": "/ 记忆与表达",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text2",
+      "group": "practice",
+      "label": "标题 · 看懂之后，",
+      "value": "看懂之后，",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text3",
+      "group": "practice",
+      "label": "标题 · 更要说得出、写得好。",
+      "value": "更要说得出、写得好。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text4",
+      "group": "practice",
+      "label": "文案 · 让阅读里的每一次相遇，成为下一次表达的底气。",
+      "value": "让阅读里的每一次相遇，成为下一次表达的底气。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.attribute1",
+      "group": "practice",
+      "label": "无障碍说明 · 选择练习方式",
+      "value": "选择练习方式",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.writing",
+      "group": "interaction",
+      "label": "逐句写作标签",
+      "value": "逐句写作",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.roleplay",
+      "group": "interaction",
+      "label": "场景对话标签",
+      "value": "场景对话",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text5",
+      "group": "practice",
+      "label": "标题 · 把生词，",
+      "value": "把生词，",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text6",
+      "group": "practice",
+      "label": "标题 · 变成真正认识的词。",
+      "value": "变成真正认识的词。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text7",
+      "group": "practice",
+      "label": "文案 · 从阅读中留下的词汇出发，先回忆，再翻面。",
+      "value": "从阅读中留下的词汇出发，先回忆，再翻面。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text8",
+      "group": "practice",
+      "label": "文案 · 也可以用拼写练习，巩固记忆。",
+      "value": "也可以用拼写练习，巩固记忆。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text9",
+      "group": "practice",
+      "label": "功能说明 · 阅读词汇，直接进入复习",
+      "value": "阅读词汇，直接进入复习",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text10",
+      "group": "practice",
+      "label": "功能说明 · 按记忆状态安排下一次出现",
+      "value": "按记忆状态安排下一次出现",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text11",
+      "group": "practice",
+      "label": "功能说明 · 词卡与拼写，换一种方式记住",
+      "value": "词卡与拼写，换一种方式记住",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text12",
+      "group": "practice",
+      "label": "文案 · 英文 → 中文",
+      "value": "英文 → 中文",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text13",
+      "group": "practice",
+      "label": "文案 · Growth takes",
+      "value": "Growth takes",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text14",
+      "group": "practice",
+      "label": "文案 · patience.",
+      "value": "patience.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text15",
+      "group": "practice",
+      "label": "文案 · 先回忆，再确认",
+      "value": "先回忆，再确认",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.flipFront",
+      "group": "interaction",
+      "label": "词卡翻面按钮",
+      "value": "翻开词卡",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.cardCaption",
+      "group": "interaction",
+      "label": "词卡默认说明",
+      "value": "示例词卡 · 点击即可体验",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text16",
+      "group": "practice",
+      "label": "标题 · 读过的句子，",
+      "value": "读过的句子，",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text17",
+      "group": "practice",
+      "label": "标题 · 试着亲手写出来。",
+      "value": "试着亲手写出来。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text18",
+      "group": "practice",
+      "label": "文案 · 沿着文章里的表达逐句练习，",
+      "value": "沿着文章里的表达逐句练习，",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text19",
+      "group": "practice",
+      "label": "文案 · 在提示与反馈中，找到自己的说法。",
+      "value": "在提示与反馈中，找到自己的说法。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text20",
+      "group": "practice",
+      "label": "功能说明 · 从文章提取句子，循序练习",
+      "value": "从文章提取句子，循序练习",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text21",
+      "group": "practice",
+      "label": "功能说明 · 按难度获取提示与局部建议",
+      "value": "按难度获取提示与局部建议",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text22",
+      "group": "practice",
+      "label": "功能说明 · 保留练习记录，随时继续",
+      "value": "保留练习记录，随时继续",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text23",
+      "group": "practice",
+      "label": "文案 · 译林 · 逐句写作",
+      "value": "译林 · 逐句写作",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text24",
+      "group": "practice",
+      "label": "文案 · 示例练习",
+      "value": "示例练习",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text25",
+      "group": "practice",
+      "label": "文案 · 01 / 试着写一句",
+      "value": "01 / 试着写一句",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text26",
+      "group": "practice",
+      "label": "文案 · 小小的行动也能带来改变。",
+      "value": "小小的行动也能带来改变。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text27",
+      "group": "practice",
+      "label": "文案 · 用自己的话，写下这句英文。",
+      "value": "用自己的话，写下这句英文。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.attribute2",
+      "group": "practice",
+      "label": "输入提示 · 在这里写一句英文…",
+      "value": "在这里写一句英文…",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text28",
+      "group": "practice",
+      "label": "按钮 / 链接 · 查看示例反馈",
+      "value": "查看示例反馈",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text29",
+      "group": "practice",
+      "label": "文案 · 示例反馈仅供体验，软件内支持 AI 分析。",
+      "value": "示例反馈仅供体验，软件内支持 AI 分析。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text30",
+      "group": "practice",
+      "label": "标题 · 换一个场景，",
+      "value": "换一个场景，",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text31",
+      "group": "practice",
+      "label": "标题 · 把语言用在生活里。",
+      "value": "把语言用在生活里。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text32",
+      "group": "practice",
+      "label": "文案 · 从一杯咖啡到一次旅行，",
+      "value": "从一杯咖啡到一次旅行，",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text33",
+      "group": "practice",
+      "label": "文案 · 在连续对话中，让表达慢慢变自然。",
+      "value": "在连续对话中，让表达慢慢变自然。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text34",
+      "group": "practice",
+      "label": "功能说明 · 在真实情境中练习交流",
+      "value": "在真实情境中练习交流",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text35",
+      "group": "practice",
+      "label": "功能说明 · 借助回复建议，迈出第一步",
+      "value": "借助回复建议，迈出第一步",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text36",
+      "group": "practice",
+      "label": "功能说明 · 用对话与复盘，发现新的表达",
+      "value": "用对话与复盘，发现新的表达",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text37",
+      "group": "practice",
+      "label": "文案 · 译林 · 场景对话",
+      "value": "译林 · 场景对话",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text38",
+      "group": "practice",
+      "label": "按钮 / 链接 · 重新体验 ↻",
+      "value": "重新体验 ↻",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text39",
+      "group": "practice",
+      "label": "标题 · 咖啡店的一次对话",
+      "value": "咖啡店的一次对话",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text40",
+      "group": "practice",
+      "label": "文案 · 示例对话 · 选择一句回复",
+      "value": "示例对话 · 选择一句回复",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.npcName",
+      "group": "interaction",
+      "label": "对话角色名称",
+      "value": "Barista",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.chatGreeting",
+      "group": "interaction",
+      "label": "咖啡师开场白",
+      "value": "Hi! What can I get for you today?",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.replyCoffee",
+      "group": "interaction",
+      "label": "回复选项：咖啡",
+      "value": "I'd like a coffee, please.",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "interaction.replyMenu",
+      "group": "interaction",
+      "label": "回复选项：菜单",
+      "value": "Could I see the menu?",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "practice.text41",
+      "group": "practice",
+      "label": "文案 · 以上为功能演示，下载译林后开启自己的学习。",
+      "value": "以上为功能演示，下载译林后开启自己的学习。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text1",
+      "group": "faq",
+      "label": "文案 · / 开始之前",
+      "value": "/ 开始之前",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text2",
+      "group": "faq",
+      "label": "标题 · 想知道的，",
+      "value": "想知道的，",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text3",
+      "group": "faq",
+      "label": "标题 · 先聊清楚。",
+      "value": "先聊清楚。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text4",
+      "group": "faq",
+      "label": "文案 · 从一篇文章开始，按自己的节奏学习。",
+      "value": "从一篇文章开始，按自己的节奏学习。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text5",
+      "group": "faq",
+      "label": "文案 · 使用 AI 功能，需要准备什么？",
+      "value": "使用 AI 功能，需要准备什么？",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text6",
+      "group": "faq",
+      "label": "文案 · 在软件中配置兼容的 AI 服务地址、模型和自己的 AP",
+      "value": "在软件中配置兼容的 AI 服务地址、模型和自己的 API Key。阅读与本地学习记录可以先用起来。AI 请求由你选择的服务处理，相关费用以服务商规则为准。",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text7",
+      "group": "faq",
+      "label": "文案 · 学习记录会保存在哪里？",
+      "value": "学习记录会保存在哪里？",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text8",
+      "group": "faq",
+      "label": "文案 · 文章、词汇与练习进度默认保存在当前设备。接入账号服务后",
+      "value": "文章、词汇与练习进度默认保存在当前设备。接入账号服务后，可以登录并手动同步学习记录；API Key 和设备偏好不会随学习记录同步。卸载或清除数据前，请先导出或同步重要内容。",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text9",
+      "group": "faq",
+      "label": "文案 · 没有网络，还能使用吗？",
+      "value": "没有网络，还能使用吗？",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text10",
+      "group": "faq",
+      "label": "文案 · 可以阅读已保存的文章，复习本地词卡，并查看已有记录。A",
+      "value": "可以阅读已保存的文章，复习本地词卡，并查看已有记录。AI 查词、翻译、生成、写作评估、场景对话和账号同步等在线功能需要网络与相应服务配置。本地词典与离线语音需事先安装所需资源。",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text11",
+      "group": "faq",
+      "label": "文案 · 支持哪些设备？",
+      "value": "支持哪些设备？",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text12",
+      "group": "faq",
+      "label": "文案 · 这里提供 Android 安装包。译林也基于 Web ",
+      "value": "这里提供 Android 安装包。译林也基于 Web 技术开发，可从 GitHub 项目获取源码并在浏览器中运行。外部悬浮词典等系统级功能需要支持对应能力的 Android 应用。",
+      "format": "text",
+      "multiline": true,
+      "maxLength": 1000
+    },
+    {
+      "key": "faq.text13",
+      "group": "faq",
+      "label": "按钮 / 链接 · 查看项目与运行说明",
+      "value": "查看项目与运行说明",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "download.text1",
+      "group": "download",
+      "label": "标题 · 下一页，",
+      "value": "下一页，",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "download.text2",
+      "group": "download",
+      "label": "标题 · 是你的新世界。",
+      "value": "是你的新世界。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "download.text3",
+      "group": "download",
+      "label": "文案 · 带上译林，开启从阅读到表达的旅程。",
+      "value": "带上译林，开启从阅读到表达的旅程。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "download.text4",
+      "group": "download",
+      "label": "文案 · Android · v__APP_VERSION__",
+      "value": "Android · v__APP_VERSION__",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "download.text5",
+      "group": "download",
+      "label": "按钮 / 链接 · 查看 GitHub 项目",
+      "value": "查看 GitHub 项目",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "download.attribute1",
+      "group": "download",
+      "label": "无障碍说明 · 译林 YiLin 首页",
+      "value": "译林 YiLin 首页",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "download.text6",
+      "group": "download",
+      "label": "文案 · 在阅读中，慢慢长出自己的语言。",
+      "value": "在阅读中，慢慢长出自己的语言。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "download.attribute2",
+      "group": "download",
+      "label": "无障碍说明 · 页脚导航",
+      "value": "页脚导航",
+      "format": "attribute",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "download.text7",
+      "group": "download",
+      "label": "按钮 / 链接 · 返回顶部 ↑",
+      "value": "返回顶部 ↑",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "download.text8",
+      "group": "download",
+      "label": "文案 · © 2026 YiLin",
+      "value": "© 2026 YiLin",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    },
+    {
+      "key": "metadata.applicationDescription",
+      "group": "metadata",
+      "label": "软件结构化描述",
+      "value": "支持沉浸阅读、语境查词、词卡复习、逐句写作与场景对话的语言学习工具。",
+      "format": "text",
+      "multiline": false,
+      "maxLength": 1000
+    }
+  ]
+}

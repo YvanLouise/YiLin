@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>译林 · 本地网站管理</title>
+  <link rel="icon" href="/preview/assets/logo.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/main.js"></script>
+</head>
+<body>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="document" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8l-5-5ZM14 3v6h5M8 13h8M8 17h6"/></symbol>
+    <symbol id="book" viewBox="0 0 24 24"><path d="M12 5C8 3 5 3 2 5v15c3-2 6-2 10 0 4-2 7-2 10 0V5c-3-2-6-2-10 0Zm0 0v15"/></symbol>
+    <symbol id="link" viewBox="0 0 24 24"><path d="m10 14 4-4M8 16l-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 10a4 4 0 0 0 6 0l4-4a4 4 0 0 0-6-6l-1 1" transform="translate(0 0) scale(.95)"/></symbol>
+    <symbol id="refresh" viewBox="0 0 24 24"><path d="M20 8a9 9 0 0 0-15-3L2 8m0-6v6h6m-4 8a9 9 0 0 0 15 3l3-3m0 6v-6h-6"/></symbol>
+    <symbol id="external" viewBox="0 0 24 24"><path d="M13 3h8v8M21 3 10 14M9 5H4v16h16v-5"/></symbol>
+    <symbol id="upload" viewBox="0 0 24 24"><path d="M7 17H5a4 4 0 1 1 1-8 6 6 0 0 1 12 0 4 4 0 0 1 1 8h-2M12 21V10m-4 4 4-4 4 4"/></symbol>
+    <symbol id="search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="desktop" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="1"/><path d="M8 21h8m-4-4v4"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+    <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 3"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </svg>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="译林网站管理首页"><b>YL</b><span>译林</span></a>
+    <nav class="main-nav" aria-label="管理功能">
+      <button type="button" data-view="content" aria-current="page"><svg class="icon"><use href="#document"/></svg>网站文案</button>
+      <button type="button" data-view="readme"><svg class="icon"><use href="#book"/></svg>README 文档</button>
+      <button type="button" data-view="release"><svg class="icon"><use href="#link"/></svg>版本与链接</button>
+      <button type="button" data-view="repository"><svg class="icon"><use href="#refresh"/></svg>仓库更新</button>
+    </nav>
+    <div class="group-navigation" id="group-navigation"><p>文案分区</p><nav id="content-groups" aria-label="文案分区"></nav></div>
+    <div class="sidebar-footer"><span class="local-dot"></span>仅在本机运行<small>内容备份保存在 .local/backups</small></div>
+  </aside>
+  <main class="workspace">
+    <header class="workspace-header">
+      <div><h1>网站管理</h1><p>让每一次更新，都清楚可见。</p></div>
+      <div class="header-actions">
+        <a class="button button-outline" href="/preview/" target="_blank" rel="noopener"><svg class="icon"><use href="#external"/></svg>预览网站</a>
+        <button class="button" id="save-button" type="button" disabled>保存修改</button>
+        <button class="button button-primary" id="publish-button" type="button" disabled><svg class="icon"><use href="#upload"/></svg>一键更新仓库</button>
+      </div>
+    </header>
+    <div class="metadata-bar"><a id="repository-link" href="https://github.com/YvanLouise/YiLin" target="_blank" rel="noopener">YvanLouise / YiLin <span>· main</span></a><span class="save-state" id="save-state" role="status">正在载入</span></div>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <section id="content-view" class="content-workspace" aria-label="网站文案编辑">
+      <div class="editor-pane">
+        <div class="pane-header"><div><h2 id="group-title">首屏介绍</h2><span id="field-count"></span></div><label class="search-field"><svg class="icon"><use href="#search"/></svg><input type="search" id="content-search" placeholder="搜索文案" aria-label="搜索文案"></label></div>
+        <div id="content-fields" class="content-fields"><p class="empty-state">正在读取网站文案…</p></div>
+      </div>
+      <aside class="preview-pane" aria-label="网站预览">
+        <div class="pane-header"><h2>网站预览</h2><div class="segmented-control" role="group" aria-label="预览设备"><button type="button" data-device="desktop" aria-pressed="true" aria-label="桌面预览"><svg class="icon"><use href="#desktop"/></svg></button><button type="button" data-device="mobile" aria-pressed="false" aria-label="手机预览"><svg class="icon"><use href="#phone"/></svg></button></div></div>
+        <div class="preview-frame-slot" id="preview-slot"><iframe id="site-preview" src="/preview/" title="网站实时预览"></iframe></div>
+        <div class="preview-caption"><button id="refresh-preview" type="button"><svg class="icon"><use href="#refresh"/></svg>保存后刷新预览</button><span>本地构建结果</span></div>
+      </aside>
+    </section>
+    <section id="readme-view" class="readme-view" aria-labelledby="readme-title" hidden>
+      <h2 id="readme-title">README 文档</h2>
+      <div class="document-tabs" role="tablist" aria-label="README 文件"><button type="button" id="readme-app-tab" role="tab" aria-selected="true" aria-controls="readme-panel" data-readme="app">软件 README</button><button type="button" id="readme-site-tab" role="tab" aria-selected="false" aria-controls="readme-panel" data-readme="site" tabindex="-1">网站 README</button></div>
+      <div id="readme-panel" role="tabpanel" aria-labelledby="readme-app-tab"><p class="document-path" id="readme-path">README.md · Markdown</p><div class="document-split"><label class="markdown-editor"><span class="sr-only" id="readme-editor-label">软件 README 内容</span><textarea id="readme-editor" spellcheck="false" aria-labelledby="readme-editor-label"></textarea></label><article id="readme-preview" class="markdown-preview" aria-label="README 渲染预览"></article></div></div>
+      <p class="section-note">内容保存在本地，点击“一键更新仓库”后提交到 GitHub。</p>
+    </section>
+    <section id="release-view" class="release-view" aria-labelledby="release-title" hidden><h2 id="release-title">版本与链接</h2><p class="section-note">版本号、安装包和项目链接会同时用于网页按钮与页面信息。</p><div class="release-fields" id="release-fields"></div></section>
+    <section id="repository-view" class="repository-view" aria-labelledby="repository-title" hidden>
+      <div class="section-title-row"><div><h2 id="repository-title">仓库更新</h2><p class="section-note">网站目录与 README 会在独立目录中提交。</p></div><button class="button" type="button" id="check-repository"><svg class="icon"><use href="#refresh"/></svg>刷新仓库状态</button></div>
+      <dl class="repository-details"><div><dt>目标仓库</dt><dd><a href="https://github.com/YvanLouise/YiLin" target="_blank" rel="noopener">YvanLouise / YiLin</a></dd></div><div><dt>目标分支</dt><dd>main</dd></div><div><dt>仓库连接</dt><dd id="connection-state">正在连接…</dd></div><div><dt>远端提交</dt><dd id="remote-head">—</dd></div><div><dt>README 原文</dt><dd><a href="https://raw.githubusercontent.com/YvanLouise/YiLin/main/README.md" target="_blank" rel="noopener">main/README.md<svg class="icon"><use href="#external"/></svg></a></dd></div></dl>
+      <label class="commit-message">提交说明<input id="commit-message" type="text" maxlength="180" value="docs: update YiLin website and README"></label>
+      <label class="checkbox-label"><input id="include-app-readme" type="checkbox" checked>同时更新软件根目录的 README.md</label>
+      <p class="section-note">会更新 website/ 中的网站源码、静态构建和管理页。主项目中其他未提交内容不会一起上传。</p>
+      <div class="authentication-help"><h3>GitHub 登录</h3><p>推送使用本机 Git 的登录信息。首次使用或提示认证失败时，在终端执行：</p><pre><code>gh auth login --hostname github.com --git-protocol https
+gh auth setup-git</code></pre><p>登录完成后，回到这里点击“刷新仓库状态”并重试。仓库更新完成后，Sites 托管的网站需另行部署。</p></div>
+      <div class="job-panel" id="job-panel" aria-live="polite" hidden><h3 id="job-title">更新进度</h3><ol id="job-steps"></ol><p id="job-result"></p><details id="job-files-container" hidden><summary>查看本次文件</summary><pre id="job-files"></pre></details></div>
+      <div class="history-section"><h3>最近更新</h3><div id="publish-history"><p class="empty-state">尚未更新仓库。</p></div></div>
+    </section>
+    <footer class="update-strip"><svg class="icon"><use href="#clock"/></svg><strong>上次更新</strong><span id="last-publish">尚未更新仓库</span><span class="update-strip-note">保存内容后，点击“一键更新仓库”推送到 GitHub。</span><a href="https://github.com/YvanLouise/YiLin" target="_blank" rel="noopener">查看仓库<svg class="icon"><use href="#external"/></svg></a></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,7 @@
+node_modules/
+.qa/
+.site-workflow/
+*.tar
+*.tar.gz
+.openai/artifacts/
+.local/
