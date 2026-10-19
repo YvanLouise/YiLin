@@ -597,7 +597,7 @@
       "key": "hero.title1",
       "group": "hero",
       "label": "标题第一行",
-      "value": "读进一片森林，",
+      "value": "进入语言的森林",
       "format": "text",
       "multiline": false,
       "maxLength": 1000
@@ -606,7 +606,7 @@
       "key": "hero.title2",
       "group": "hero",
       "label": "标题第二行",
-      "value": "长出自己的",
+      "value": "译出自己的",
       "format": "text",
       "multiline": false,
       "maxLength": 1000
@@ -615,7 +615,7 @@
       "key": "hero.title3",
       "group": "hero",
       "label": "标题强调",
-      "value": "语言。",
+      "value": "理解",
       "format": "text",
       "multiline": false,
       "maxLength": 1000
