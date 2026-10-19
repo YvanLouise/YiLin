@@ -4,10 +4,10 @@ import { mkdtemp, mkdir, readFile, writeFile, cp, rm, chmod, access } from 'node
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { request as httpRequest } from 'node:http';
+import { createServer, request as httpRequest } from 'node:http';
 import { createStore } from '../scripts/admin-store.mjs';
 import { createPublisher, runGit } from '../scripts/admin-publisher.mjs';
-import { createAdminServer } from '../scripts/admin-server.mjs';
+import { createAdminServer, startAdminServer } from '../scripts/admin-server.mjs';
 import { buildSite } from '../scripts/build.mjs';
 
 const source = fileURLToPath(new URL('../', import.meta.url));
@@ -43,6 +43,72 @@ async function remoteFixture(f) {
   return { remote, seed, head:await git(['rev-parse','HEAD'],seed) };
 }
 async function finish(job) { for (let i=0; i<1000 && job.status==='running'; i++) await new Promise(resolve=>setTimeout(resolve,20)); assert.notEqual(job.status,'running','publish timed out'); return job; }
+async function closeServer(server) { server.closeAllConnections(); await new Promise(resolve=>server.close(resolve)); }
+async function unusedPort() {
+  const server=createServer();
+  await new Promise((resolve,reject)=>{ server.once('error',reject); server.listen(0,'127.0.0.1',resolve); });
+  const port=server.address().port;
+  await closeServer(server);
+  return port;
+}
+
+test('a second launch reuses this project without rebuilding or resetting its session', async t => {
+  const f=await fixture(t);
+  const app=await startAdminServer({siteRoot:f.site,projectRoot:f.project,port:0});
+  t.after(()=>closeServer(app.server));
+  const state=await (await fetch(`${app.url}/api/state`)).json();
+  await writeFile(path.join(f.site,'src/index.html'),'{{unknown.field}}');
+  const existing=await startAdminServer({siteRoot:f.site,projectRoot:f.project,port:app.server.address().port});
+  assert.equal(existing.reused,true); assert.equal(existing.url,app.url); assert.equal(existing.server,undefined);
+  const after=await (await fetch(`${app.url}/api/state`)).json();
+  assert.equal(after.csrf,state.csrf); assert.equal(after.revision,state.revision);
+  assert.equal((await fetch(`${existing.url}/`)).status,200);
+});
+
+test('an unrelated listener is preserved and receives a readable port conflict', async t => {
+  const f=await fixture(t);
+  const server=createServer((_request,response)=>response.writeHead(200,{'Content-Type':'application/json'}).end('{"service":"another-app","ready":true}'));
+  await new Promise((resolve,reject)=>{ server.once('error',reject); server.listen(0,'127.0.0.1',resolve); });
+  t.after(()=>closeServer(server));
+  const port=server.address().port;
+  await assert.rejects(startAdminServer({siteRoot:f.site,projectRoot:f.project,port}),error=>error.code==='EADDRINUSE' && /ADMIN_PORT/.test(error.message));
+  await assert.rejects(access(path.join(f.site,'dist')),error=>error.code==='ENOENT');
+  assert.equal((await fetch(`http://127.0.0.1:${port}`)).status,200);
+});
+
+test('an admin belonging to a different checkout is not reused', async t => {
+  const first=await fixture(t); const second=await fixture(t);
+  const app=await startAdminServer({siteRoot:first.site,projectRoot:first.project,port:0});
+  t.after(()=>closeServer(app.server));
+  await assert.rejects(startAdminServer({siteRoot:second.site,projectRoot:second.project,port:app.server.address().port}),error=>error.code==='EADDRINUSE');
+  await assert.rejects(access(path.join(second.site,'dist')),error=>error.code==='ENOENT');
+  assert.equal((await fetch(`${app.url}/api/health`)).status,200);
+});
+
+test('simultaneous launches share one ready server', async t => {
+  const f=await fixture(t); const port=await unusedPort();
+  const launch=async()=>{
+    const app=await startAdminServer({siteRoot:f.site,projectRoot:f.project,port});
+    if (app.server) t.after(()=>closeServer(app.server));
+    return app;
+  };
+  const apps=await Promise.all([launch(),launch()]);
+  assert.equal(apps.filter(app=>!app.reused).length,1); assert.equal(apps.filter(app=>app.reused).length,1);
+  assert.equal(apps[0].url,apps[1].url);
+  assert.equal((await (await fetch(`${apps[0].url}/api/health`)).json()).ready,true);
+});
+
+test('a failed startup releases its port so the corrected project can start', async t => {
+  const f=await fixture(t); const port=await unusedPort();
+  const filename=path.join(f.site,'src/index.html'); const original=await readFile(filename);
+  await writeFile(filename,'{{unknown.field}}');
+  await assert.rejects(startAdminServer({siteRoot:f.site,projectRoot:f.project,port}),/Unknown content field/);
+  await writeFile(filename,original);
+  const app=await startAdminServer({siteRoot:f.site,projectRoot:f.project,port});
+  t.after(()=>closeServer(app.server));
+  assert.equal(app.reused,false);
+  assert.equal((await fetch(`${app.url}/preview/`)).status,200);
+});
 
 test('saving content and both READMEs rebuilds escaped HTML and dynamic copy', async t => {
   const f=await fixture(t); const input=payload(await f.store.state());
