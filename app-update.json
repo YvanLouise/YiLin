@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 43,
-  "versionName": "1.0.42",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.42/com.yilin.app-1.0.42-debug.apk",
-  "sha256": "a5459fc8fc17111cd61cbd1ca0fd529a9f004990ec73d61145454d33b95e2e52",
-  "notes": "功能优化",
-  "publishedAt": "2026-10-19T13:48:24.445Z"
+  "versionCode": 44,
+  "versionName": "1.0.43",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.43/com.yilin.app-1.0.43-debug.apk",
+  "sha256": "826c63de550e10f25fe29016cc3b9e4047d77f61ddb9d8c58c945ea0304f9bec",
+  "notes": "优化首屏加载与数据库性能；修复阅读切换、词汇并发保存和单词卡评分撤销问题；完善保存失败重试及导入窗口显示。",
+  "publishedAt": "2026-10-23T11:01:05.269Z"
 }
