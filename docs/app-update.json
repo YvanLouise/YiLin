@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 44,
-  "versionName": "1.0.43",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.43/com.yilin.app-1.0.43-debug.apk",
-  "sha256": "826c63de550e10f25fe29016cc3b9e4047d77f61ddb9d8c58c945ea0304f9bec",
-  "notes": "优化首屏加载与数据库性能；修复阅读切换、词汇并发保存和单词卡评分撤销问题；完善保存失败重试及导入窗口显示。",
-  "publishedAt": "2026-10-23T11:01:05.269Z"
+  "versionCode": 45,
+  "versionName": "1.0.44",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.44/com.yilin.app-1.0.44-debug.apk",
+  "sha256": "afb414b266e2a50a1aaffb6e82f4d91e02920fbe84f57a41d76d1956dd5ca876",
+  "notes": "修复全文翻译中文校验失败：异常句段单独重试，保留有效译文与已有缓存，继续时仅补剩余内容；修复文章更多菜单被相邻卡片遮挡，底部空间不足时自动向上展开；完善写作分层提示、单词释义、写作评价与历次作答对比；新增文章出题练习，优化阅读与学习体验。",
+  "publishedAt": "2026-10-26T05:34:48.550Z"
 }
