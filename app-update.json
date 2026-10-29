@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 45,
-  "versionName": "1.0.44",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.44/com.yilin.app-1.0.44-debug.apk",
-  "sha256": "afb414b266e2a50a1aaffb6e82f4d91e02920fbe84f57a41d76d1956dd5ca876",
-  "notes": "修复全文翻译中文校验失败：异常句段单独重试，保留有效译文与已有缓存，继续时仅补剩余内容；修复文章更多菜单被相邻卡片遮挡，底部空间不足时自动向上展开；完善写作分层提示、单词释义、写作评价与历次作答对比；新增文章出题练习，优化阅读与学习体验。",
-  "publishedAt": "2026-10-26T05:34:48.550Z"
+  "versionCode": 46,
+  "versionName": "1.0.45",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.45/com.yilin.app-1.0.45-debug.apk",
+  "sha256": "99ee7bb001964dea4c064a29678b631ee5139df09a3888850da28a730badb304",
+  "notes": "升级全局页面转场：覆盖首页、阅读与写作、词汇词表、单词卡、角色扮演及设置子页；主导航按标签位置左右切换，详情进入与返回使用相反方向；补齐 AI 导入步骤和文章生成流程的过渡；修复快速连续切页及切换途中关闭动效时的导航状态问题；优化设置长页面返回位置恢复，保留文章阅读位置与导入内容；兼容旧版 WebView，支持减少动态效果。",
+  "publishedAt": "2026-10-29T05:19:10.888Z"
 }
