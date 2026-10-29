@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 46,
-  "versionName": "1.0.45",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.45/com.yilin.app-1.0.45-debug.apk",
-  "sha256": "99ee7bb001964dea4c064a29678b631ee5139df09a3888850da28a730badb304",
-  "notes": "升级全局页面转场：覆盖首页、阅读与写作、词汇词表、单词卡、角色扮演及设置子页；主导航按标签位置左右切换，详情进入与返回使用相反方向；补齐 AI 导入步骤和文章生成流程的过渡；修复快速连续切页及切换途中关闭动效时的导航状态问题；优化设置长页面返回位置恢复，保留文章阅读位置与导入内容；兼容旧版 WebView，支持减少动态效果。",
-  "publishedAt": "2026-10-29T05:19:10.888Z"
+  "versionCode": 47,
+  "versionName": "1.0.46",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.46/com.yilin.app-1.0.46-debug.apk",
+  "sha256": "c91d4c53e0b8b09e6c7896959472a790af65ab149583adeb28765ee51cb3bb07",
+  "notes": "整体性能优化：长文章点词、多选与朗读高亮改为更新相关段落，减少全文重复渲染；词汇页新增每页 50 条的分页，搜索仍覆盖全部词条，并复用检索索引与语音能力检查；减少独立悬浮词典的启动加载量，账号同步改为按需加载；复用分句器与角色扮演数据库连接，减少阅读库重复读取；优化词典输入时的全局状态更新，保留阅读位置、页面转场及原有学习记录。",
+  "publishedAt": "2026-10-29T14:12:03.210Z"
 }
