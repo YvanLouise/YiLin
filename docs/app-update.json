@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 47,
-  "versionName": "1.0.46",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.46/com.yilin.app-1.0.46-debug.apk",
-  "sha256": "c91d4c53e0b8b09e6c7896959472a790af65ab149583adeb28765ee51cb3bb07",
-  "notes": "整体性能优化：长文章点词、多选与朗读高亮改为更新相关段落，减少全文重复渲染；词汇页新增每页 50 条的分页，搜索仍覆盖全部词条，并复用检索索引与语音能力检查；减少独立悬浮词典的启动加载量，账号同步改为按需加载；复用分句器与角色扮演数据库连接，减少阅读库重复读取；优化词典输入时的全局状态更新，保留阅读位置、页面转场及原有学习记录。",
-  "publishedAt": "2026-10-29T14:12:03.210Z"
+  "versionCode": 48,
+  "versionName": "1.0.47",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.47/com.yilin.app-1.0.47-debug.apk",
+  "sha256": "46b6421c877dcbbfcf286866363620e7a21c4364987c53ce0eebbc6bc3c37747",
+  "notes": "新增单词清晰发音设置与试听；优化文章、句子和词典语音的播放切换、回退提示及长文本朗读，提升 Android 在线语音稳定性。",
+  "publishedAt": "2026-11-03T15:40:30.022Z"
 }
