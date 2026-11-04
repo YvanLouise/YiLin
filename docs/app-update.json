@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 48,
-  "versionName": "1.0.47",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.47/com.yilin.app-1.0.47-debug.apk",
-  "sha256": "46b6421c877dcbbfcf286866363620e7a21c4364987c53ce0eebbc6bc3c37747",
-  "notes": "新增单词清晰发音设置与试听；优化文章、句子和词典语音的播放切换、回退提示及长文本朗读，提升 Android 在线语音稳定性。",
-  "publishedAt": "2026-11-03T15:40:30.022Z"
+  "versionCode": 49,
+  "versionName": "1.0.48",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.48/com.yilin.app-1.0.48-debug.apk",
+  "sha256": "e7b2f0c63f21cec1806b907e988660808d6d4e71f45ea1da7b95120dadf6a515",
+  "notes": "新增语音缓存：在线朗读与词典录音自动保存，支持离线复播，并可在朗读设置中查看和清理缓存。",
+  "publishedAt": "2026-11-04T08:28:14.744Z"
 }
