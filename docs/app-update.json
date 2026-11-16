@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 49,
-  "versionName": "1.0.48",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.48/com.yilin.app-1.0.48-debug.apk",
-  "sha256": "e7b2f0c63f21cec1806b907e988660808d6d4e71f45ea1da7b95120dadf6a515",
-  "notes": "新增语音缓存：在线朗读与词典录音自动保存，支持离线复播，并可在朗读设置中查看和清理缓存。",
-  "publishedAt": "2026-11-04T08:28:14.744Z"
+  "versionCode": 51,
+  "versionName": "1.0.50",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.50/com.yilin.app-1.0.50-debug.apk",
+  "sha256": "0ec5489662f1e8e164f67a7f4dd8f0c3df602a05a4a6c8377ea47bc15525cb72",
+  "notes": "- 内置 3,000 个高频英汉词条。阅读点词、全局词典和悬浮词典支持本地查词，命中时不消耗 AI token。需要结合原句时可主动请求 AI 解释。\n- 修复 Android 导入文章时的文本文件选择，支持在应用内通过悬浮窗查看导入进度。退出前会提示，重新进入可继续处理保留的草稿。\n- 阅读点词菜单适配手机屏幕边缘，句子翻译显示在该句末尾下方。",
+  "publishedAt": "2026-11-16T13:23:30.914Z"
 }
