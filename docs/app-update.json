@@ -1,9 +1,9 @@
 {
   "packageName": "com.yilin.app",
-  "versionCode": 51,
-  "versionName": "1.0.50",
-  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.50/com.yilin.app-1.0.50-debug.apk",
-  "sha256": "0ec5489662f1e8e164f67a7f4dd8f0c3df602a05a4a6c8377ea47bc15525cb72",
-  "notes": "- 内置 3,000 个高频英汉词条。阅读点词、全局词典和悬浮词典支持本地查词，命中时不消耗 AI token。需要结合原句时可主动请求 AI 解释。\n- 修复 Android 导入文章时的文本文件选择，支持在应用内通过悬浮窗查看导入进度。退出前会提示，重新进入可继续处理保留的草稿。\n- 阅读点词菜单适配手机屏幕边缘，句子翻译显示在该句末尾下方。",
-  "publishedAt": "2026-11-16T13:23:30.914Z"
+  "versionCode": 52,
+  "versionName": "1.0.51",
+  "apkUrl": "https://github.com/YvanLouise/YiLin/releases/download/v1.0.51/com.yilin.app-1.0.51-debug.apk",
+  "sha256": "e886a4b513d991d2f141b495458a51258c455140b7f5855273e99b85d056c87c",
+  "notes": "- 阅读内 AI 查词分开显示当前语境义和不含上下文的一般义；内置词典补充词形、音标与例句展示。\n- 角色扮演支持继续未完成的对话和回看历史原文，并保存对话输入与场景草稿。\n- Android 悬浮词典支持固定面板，查看释义时仍可滑动原应用；优化键盘打开时的查词工具入口。",
+  "publishedAt": "2026-11-19T15:03:33.409Z"
 }
